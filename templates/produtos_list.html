@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Produtos</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table th, table td {
-            border: 1 solid #afafaf;
-            padding: 8px;
-            text-align: left;
-        }
-        table th{
-            background-color: #2e2e2e;
-            color: #dcdcdc;
-        }
-    </style>
-</head>
-<body>
+{%extends 'base.html' %}
+{%block title%} lista produto {% endblock title%}
+    {%block conteudo%}
     <h1>Lista de Protudos</h1>
     <table>
         <thead>
@@ -62,5 +41,4 @@
         </tbody>
         
     </table>
-</body>
-</html>
+    {%endblock conteudo%}
